@@ -76,9 +76,9 @@
 
 // */
 
-// let firstName = "sam"
-// let lastName = "biamonte"
-// let street = " 2 Brairwood Ln"
+// let firstName = "name"
+// let lastName = "lastname"
+// let street = " 123 school st"
 // let city =  "Portland"
 // let state = "ME"
 
