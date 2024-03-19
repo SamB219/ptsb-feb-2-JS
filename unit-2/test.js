@@ -194,18 +194,40 @@
 
 
 
-let a = 4*5
-let b = 4
+// let a = 4*5
+// let b = 4
 
-let addUp = ()=>{
-    return console.log(a + b);
+// let addUp = ()=>{
+//     return console.log(a + b);
 
-}
-
-
-addUp()
+// }
 
 
+// addUp()
 
 
 
+
+
+// Your code here, reference the instructions if you're unsure how to start
+
+let menu = {
+    burger: 5.00,
+    fries: 3.50,
+    shake: 1.11,
+    salad: 4.25,
+  
+    order: function(orderPlaced) {
+      let orderSplit = orderPlaced.split(',');
+      let sum = 0;
+      for (let item of orderSplit) {
+        sum += this[item.trim()]; // Accessing the menu items using `this`
+      }
+      console.log(sum.toFixed(2)); // Print the total sum
+    }
+  }
+  
+  // Call the order method with different combinations of menu items
+  menu.order("burger, fries");
+  menu.order("salad, shake");
+  
