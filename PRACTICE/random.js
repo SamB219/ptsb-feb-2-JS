@@ -29,3 +29,5 @@ function tipAmount(bill, tipPercentage) {
 }
 
 tipAmount(bill, .20)
+
+
