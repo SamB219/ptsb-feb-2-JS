@@ -30,7 +30,8 @@ function Login({updateToken}) {
             })
 
             const data = await res.json();
-            if (data.message === 'Success!') {
+            console.log(data);
+            if (data.message === 'Successful') {
                 updateToken(data.token);
                 navigate('/movie');
             } else {

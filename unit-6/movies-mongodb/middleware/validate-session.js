@@ -1,4 +1,4 @@
-
+const User = require('../models/users.model')
 const jwt = require('jsonwebtoken');
 
 const validateSession = async (req, res, next) => {
@@ -18,7 +18,7 @@ try {
     if(!user) throw new Error('user not found')
 
     req.user = user;
-    // return next(); // moves us onto our routes
+    return next(); // moves us onto our routes
 } catch (err) {
     res.json({message: err.message});
 }

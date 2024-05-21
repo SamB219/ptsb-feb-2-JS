@@ -5,7 +5,7 @@ import Login from './login/Login';
 
 function Auth(props) {
 
-    const [button, setButton] = useState('Signup')
+    const [button, setButton] = useState('Signup');
 
     const swapForm = () => {
         button === 'Login' ?
@@ -15,7 +15,7 @@ function Auth(props) {
 
     const displayForm = () => {
         return(
-            button === 'Login' ?
+            button === 'Signup' ?
                 <Container>
                 <Row>
                 <Col md='6'>

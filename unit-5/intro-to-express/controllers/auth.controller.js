@@ -26,4 +26,9 @@ router.post('/register', (req, res) => {
 
 
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+module.exports = router;
+
+>>>>>>> f448888ea143d68fb37576bef99b27ce10d067f0
